@@ -1,0 +1,119 @@
+header {
+  background-color: #001529;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.time-line {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.sidebar {
+  float: left;
+  width: 200px;
+  padding-right: 30px;
+  border-right: 1px solid #E0E6E9;
+  position: -webkit-sticky;
+  /* sticky position and a top offset to switch between relative
+   and fixed positioning behavior during scroll. */
+  position: sticky;
+  top: 20px;
+  height: fit-content;
+}
+
+.sidebar h3 {
+  margin-top: 0;
+  color: #001529;
+  border-bottom: 2px solid #00D4FF;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  display: block;
+  padding: 10px 12px;
+  text-decoration: none;
+  color: #001529;
+  font-size: 16px;
+  border-left: 3px solid transparent;
+  border-radius: 4px;
+  transition: background .22s, color .22s, border-left-color .22s;
+  margin-bottom: 5px;
+}
+
+.sidebar a:hover {
+  /*  trigger the transition engine when the :hover pseudo-class is active. */
+  background: #f4f7fb;
+  color: #003F7D;
+  border-left: 3px solid #00D4FF;
+}
+
+.sidebar a.active {
+  background: #e8faff;
+  color: #003F7D;
+  font-weight: 600;
+  border-left: 3px solid #0085CA;
+  padding-left: 16px;
+}
+
+main {
+  margin-left: 250px;
+  padding-left: 20px;
+}
+
+.timeline-event {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 20px;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+
+.timeline-event:hover {
+  background-color: #f9f9f9;
+  transform: scale(1.01);
+}
+
+.timeline-date {
+  float: left;
+  width: 15%;
+  text-align: center;
+  font-size: 1.8em;
+  font-weight: bold;
+  color: #4CAF50;
+  padding-top: 10px;
+  border-right: 4px solid #ddd;
+  box-sizing: border-box;
+}
+
+.timeline-content {
+  float: left;
+  width: 80%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+h2 {
+  margin-top: 0;
+  color: #333;
+}
+
+img {
+  margin-top: 15px;
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,70 @@
+form {
+    max-width: 800px;
+    margin: 40px auto 0;  /* Add margin-top to create space */
+    padding: 40px;
+    background: linear-gradient(180deg, #003F7D 0%, #001529 100%);
+    color: #D8F5FF;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+form h1 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #D8F5FF;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    display: block;
+    color: #D8F5FF;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #D8F5FF;
+    border-radius: 8px;
+    background-color: #001529;
+    color: #D8F5FF;
+    font-size: 18px;
+    outline: none;
+}
+
+form input:focus,
+form textarea:focus {
+    border-color: #00D4FF;
+    box-shadow: 0 0 6px rgba(0, 212, 255, 0.7);
+}
+
+form button {
+    padding: 16px 32px;
+    background: #003F7D;
+    color: #D8F5FF;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 160ms, transform 120ms;
+}
+
+form button:hover {
+    background: #00D4FF;
+    transform: translateY(-3px);
+}
+
+form input:focus,
+form textarea:focus,
+form input:hover,
+form textarea:hover {
+    transform: scale(1.05);
+    transition: transform 300ms ease-in-out;
+}
